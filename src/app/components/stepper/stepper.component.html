@@ -1,0 +1,15 @@
+<nb-layout>
+  <nb-layout-header>Navbar
+
+    <button nbButton status="success" size="tiny" (click)="compact()">Toggle</button>
+  </nb-layout-header>
+
+  <nb-sidebar state="compacted">
+    <nb-card>
+      <nb-menu [items]="items">
+      </nb-menu>
+    </nb-card>
+  </nb-sidebar>
+
+  <nb-layout-column  class="colored-column-primary">Layout Content</nb-layout-column>
+</nb-layout>
